@@ -1,6 +1,7 @@
-﻿namespace ProductionRequirements.Models
+﻿namespace ProductionRequirements
 {
     using System;
+    using ProductionRequirements.Models;
     using System.Data.Entity;
     using System.Linq;
 
@@ -13,7 +14,7 @@
         }
 
         public ProductionModel()
-            : base("ProductionModel")
+            : base("name=ProductionModel")
         {
         }
 

@@ -67,14 +67,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201903122039203_deletedRedundant.cs" />
-    <Compile Include="Migrations\201903122039203_deletedRedundant.Designer.cs">
-      <DependentUpon>201903122039203_deletedRedundant.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductComponent.cs" />
-    <Compile Include="Models\ProductionModel.cs" />
+    <Compile Include="ProductionModel.cs" />
     <Compile Include="Models\ProductionPlan.cs" />
     <Compile Include="Models\ProductModelInitializer.cs" />
     <Compile Include="ViewModels\ProductRequirementsResult.cs" />
@@ -95,9 +91,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201903122039203_deletedRedundant.resx">
-      <DependentUpon>201903122039203_deletedRedundant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

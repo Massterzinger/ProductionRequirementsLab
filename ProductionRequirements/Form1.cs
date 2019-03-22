@@ -16,7 +16,6 @@ namespace ProductionRequirements
         public Form1()
         {
             InitializeComponent();
-            InitData();
         }
 
         private void InitData()
@@ -103,6 +102,11 @@ namespace ProductionRequirements
         private void yearPlansToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new WatchYearPlansForm().Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            InitData();
         }
     }
 }

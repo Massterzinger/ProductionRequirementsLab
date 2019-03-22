@@ -30,22 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.додатиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.yearPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.переглянутиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.yearPlansToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uoMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productComponentRequirementsResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productComponentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productComponentNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.componentUoMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,11 +42,27 @@
             this.componentAmountPerPlanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productComponentsCostDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productRequirementsResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.додатиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yearPlanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.переглянутиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yearPlansToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uoMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productComponentRequirementsResultBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productRequirementsResultBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productComponentRequirementsResultBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productRequirementsResultBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -96,6 +96,87 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(879, 400);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // productComponentIdDataGridViewTextBoxColumn
+            // 
+            this.productComponentIdDataGridViewTextBoxColumn.DataPropertyName = "ProductComponentId";
+            this.productComponentIdDataGridViewTextBoxColumn.HeaderText = "Код ПКВ";
+            this.productComponentIdDataGridViewTextBoxColumn.Name = "productComponentIdDataGridViewTextBoxColumn";
+            this.productComponentIdDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productComponentNameDataGridViewTextBoxColumn
+            // 
+            this.productComponentNameDataGridViewTextBoxColumn.DataPropertyName = "ProductComponentName";
+            this.productComponentNameDataGridViewTextBoxColumn.HeaderText = "Назва ПКВ";
+            this.productComponentNameDataGridViewTextBoxColumn.Name = "productComponentNameDataGridViewTextBoxColumn";
+            this.productComponentNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // componentUoMDataGridViewTextBoxColumn
+            // 
+            this.componentUoMDataGridViewTextBoxColumn.DataPropertyName = "ComponentUoM";
+            this.componentUoMDataGridViewTextBoxColumn.HeaderText = "Одиниця виміру ПКВ";
+            this.componentUoMDataGridViewTextBoxColumn.Name = "componentUoMDataGridViewTextBoxColumn";
+            this.componentUoMDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productComponentPriceDataGridViewTextBoxColumn
+            // 
+            this.productComponentPriceDataGridViewTextBoxColumn.DataPropertyName = "ProductComponentPrice";
+            this.productComponentPriceDataGridViewTextBoxColumn.HeaderText = "Ціна за одиницю ПКВ";
+            this.productComponentPriceDataGridViewTextBoxColumn.Name = "productComponentPriceDataGridViewTextBoxColumn";
+            this.productComponentPriceDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productIdDataGridViewTextBoxColumn
+            // 
+            this.productIdDataGridViewTextBoxColumn.DataPropertyName = "ProductId";
+            this.productIdDataGridViewTextBoxColumn.HeaderText = "Код Продукту";
+            this.productIdDataGridViewTextBoxColumn.Name = "productIdDataGridViewTextBoxColumn";
+            this.productIdDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productNameDataGridViewTextBoxColumn
+            // 
+            this.productNameDataGridViewTextBoxColumn.DataPropertyName = "ProductName";
+            this.productNameDataGridViewTextBoxColumn.HeaderText = "Назва Продукту";
+            this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
+            this.productNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productCountDataGridViewTextBoxColumn
+            // 
+            this.productCountDataGridViewTextBoxColumn.DataPropertyName = "ProductCount";
+            this.productCountDataGridViewTextBoxColumn.HeaderText = "План виробництва продукту";
+            this.productCountDataGridViewTextBoxColumn.Name = "productCountDataGridViewTextBoxColumn";
+            this.productCountDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productUoMDataGridViewTextBoxColumn
+            // 
+            this.productUoMDataGridViewTextBoxColumn.DataPropertyName = "ProductUoM";
+            this.productUoMDataGridViewTextBoxColumn.HeaderText = "Одиниця виміру продукту";
+            this.productUoMDataGridViewTextBoxColumn.Name = "productUoMDataGridViewTextBoxColumn";
+            this.productUoMDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // componentAmountPerProductDataGridViewTextBoxColumn
+            // 
+            this.componentAmountPerProductDataGridViewTextBoxColumn.DataPropertyName = "ComponentAmountPerProduct";
+            this.componentAmountPerProductDataGridViewTextBoxColumn.HeaderText = "Норма витрат ПКВ на одиницю продукту";
+            this.componentAmountPerProductDataGridViewTextBoxColumn.Name = "componentAmountPerProductDataGridViewTextBoxColumn";
+            this.componentAmountPerProductDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // componentAmountPerPlanDataGridViewTextBoxColumn
+            // 
+            this.componentAmountPerPlanDataGridViewTextBoxColumn.DataPropertyName = "ComponentAmountPerPlan";
+            this.componentAmountPerPlanDataGridViewTextBoxColumn.HeaderText = "Планова потреба ПКВ на тип продукту";
+            this.componentAmountPerPlanDataGridViewTextBoxColumn.Name = "componentAmountPerPlanDataGridViewTextBoxColumn";
+            this.componentAmountPerPlanDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productComponentsCostDataGridViewTextBoxColumn
+            // 
+            this.productComponentsCostDataGridViewTextBoxColumn.DataPropertyName = "ProductComponentsCost";
+            this.productComponentsCostDataGridViewTextBoxColumn.HeaderText = "Вартість ПКВ";
+            this.productComponentsCostDataGridViewTextBoxColumn.Name = "productComponentsCostDataGridViewTextBoxColumn";
+            this.productComponentsCostDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productRequirementsResultBindingSource
+            // 
+            this.productRequirementsResultBindingSource.DataSource = typeof(ProductionRequirements.ViewModels.ProductRequirementsResult);
             // 
             // label1
             // 
@@ -193,26 +274,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(403, 400);
             this.dataGridView2.TabIndex = 6;
             // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(1129, 31);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Сума:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(1171, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(119, 13);
-            this.textBox1.TabIndex = 8;
-            // 
             // nameDataGridViewTextBoxColumn
             // 
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
@@ -245,86 +306,25 @@
             // 
             this.productComponentRequirementsResultBindingSource.DataSource = typeof(ProductionRequirements.ViewModels.ProductComponentRequirementsResult);
             // 
-            // productComponentIdDataGridViewTextBoxColumn
+            // label3
             // 
-            this.productComponentIdDataGridViewTextBoxColumn.DataPropertyName = "ProductComponentId";
-            this.productComponentIdDataGridViewTextBoxColumn.HeaderText = "Код ПКВ";
-            this.productComponentIdDataGridViewTextBoxColumn.Name = "productComponentIdDataGridViewTextBoxColumn";
-            this.productComponentIdDataGridViewTextBoxColumn.ReadOnly = true;
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(1129, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Сума:";
             // 
-            // productComponentNameDataGridViewTextBoxColumn
+            // textBox1
             // 
-            this.productComponentNameDataGridViewTextBoxColumn.DataPropertyName = "ProductComponentName";
-            this.productComponentNameDataGridViewTextBoxColumn.HeaderText = "Назва ПКВ";
-            this.productComponentNameDataGridViewTextBoxColumn.Name = "productComponentNameDataGridViewTextBoxColumn";
-            this.productComponentNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // componentUoMDataGridViewTextBoxColumn
-            // 
-            this.componentUoMDataGridViewTextBoxColumn.DataPropertyName = "ComponentUoM";
-            this.componentUoMDataGridViewTextBoxColumn.HeaderText = "Одиниця виміру ПКВ";
-            this.componentUoMDataGridViewTextBoxColumn.Name = "componentUoMDataGridViewTextBoxColumn";
-            this.componentUoMDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productComponentPriceDataGridViewTextBoxColumn
-            // 
-            this.productComponentPriceDataGridViewTextBoxColumn.DataPropertyName = "ProductComponentPrice";
-            this.productComponentPriceDataGridViewTextBoxColumn.HeaderText = "Ціна за одиницю ПКВ";
-            this.productComponentPriceDataGridViewTextBoxColumn.Name = "productComponentPriceDataGridViewTextBoxColumn";
-            this.productComponentPriceDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productIdDataGridViewTextBoxColumn
-            // 
-            this.productIdDataGridViewTextBoxColumn.DataPropertyName = "ProductId";
-            this.productIdDataGridViewTextBoxColumn.HeaderText = "Код Продукту";
-            this.productIdDataGridViewTextBoxColumn.Name = "productIdDataGridViewTextBoxColumn";
-            this.productIdDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productNameDataGridViewTextBoxColumn
-            // 
-            this.productNameDataGridViewTextBoxColumn.DataPropertyName = "ProductName";
-            this.productNameDataGridViewTextBoxColumn.HeaderText = "Назва Продукту";
-            this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
-            this.productNameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productCountDataGridViewTextBoxColumn
-            // 
-            this.productCountDataGridViewTextBoxColumn.DataPropertyName = "ProductCount";
-            this.productCountDataGridViewTextBoxColumn.HeaderText = "План виробництва продукту";
-            this.productCountDataGridViewTextBoxColumn.Name = "productCountDataGridViewTextBoxColumn";
-            this.productCountDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productUoMDataGridViewTextBoxColumn
-            // 
-            this.productUoMDataGridViewTextBoxColumn.DataPropertyName = "ProductUoM";
-            this.productUoMDataGridViewTextBoxColumn.HeaderText = "Одиниця виміру продукту";
-            this.productUoMDataGridViewTextBoxColumn.Name = "productUoMDataGridViewTextBoxColumn";
-            this.productUoMDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // componentAmountPerProductDataGridViewTextBoxColumn
-            // 
-            this.componentAmountPerProductDataGridViewTextBoxColumn.DataPropertyName = "ComponentAmountPerProduct";
-            this.componentAmountPerProductDataGridViewTextBoxColumn.HeaderText = "Норма витрат ПКВ на одиницю продукту";
-            this.componentAmountPerProductDataGridViewTextBoxColumn.Name = "componentAmountPerProductDataGridViewTextBoxColumn";
-            this.componentAmountPerProductDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // componentAmountPerPlanDataGridViewTextBoxColumn
-            // 
-            this.componentAmountPerPlanDataGridViewTextBoxColumn.DataPropertyName = "ComponentAmountPerPlan";
-            this.componentAmountPerPlanDataGridViewTextBoxColumn.HeaderText = "Планова потреба ПКВ на тип продукту";
-            this.componentAmountPerPlanDataGridViewTextBoxColumn.Name = "componentAmountPerPlanDataGridViewTextBoxColumn";
-            this.componentAmountPerPlanDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productComponentsCostDataGridViewTextBoxColumn
-            // 
-            this.productComponentsCostDataGridViewTextBoxColumn.DataPropertyName = "ProductComponentsCost";
-            this.productComponentsCostDataGridViewTextBoxColumn.HeaderText = "Вартість ПКВ";
-            this.productComponentsCostDataGridViewTextBoxColumn.Name = "productComponentsCostDataGridViewTextBoxColumn";
-            this.productComponentsCostDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productRequirementsResultBindingSource
-            // 
-            this.productRequirementsResultBindingSource.DataSource = typeof(ProductionRequirements.ViewModels.ProductRequirementsResult);
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(1171, 31);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(119, 13);
+            this.textBox1.TabIndex = 8;
             // 
             // Form1
             // 
@@ -343,12 +343,13 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "ТЕП-32";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productRequirementsResultBindingSource)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productComponentRequirementsResultBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productRequirementsResultBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
