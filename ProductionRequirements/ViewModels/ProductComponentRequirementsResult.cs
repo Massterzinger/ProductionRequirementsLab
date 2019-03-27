@@ -4,7 +4,7 @@ namespace ProductionRequirements.ViewModels
 {
     public class ProductComponentRequirementsResult
     {
-        [DisplayName("Найменування ПКВ")]
+        [DisplayName("Найменування матеріалу")]
         public string Name { get; set; }
 
         [DisplayName("Кількість")]

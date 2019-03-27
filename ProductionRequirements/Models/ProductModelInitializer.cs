@@ -71,16 +71,6 @@ namespace ProductionRequirements.Models
             };
 
             context.ProductToComponentRelations.AddRange(productToComponentRelations);
-
-            var plans = new List<ProductionPlan>
-            {
-                new ProductionPlan{Id = Guid.NewGuid(), PlanningPeriod = "2014", ProductId = products[0].Id, PlannedAmount = 15000},
-                new ProductionPlan{Id = Guid.NewGuid(), PlanningPeriod = "2014", ProductId = products[1].Id, PlannedAmount = 2000},
-                new ProductionPlan{Id = Guid.NewGuid(), PlanningPeriod = "2014", ProductId = products[2].Id, PlannedAmount = 13400},
-                new ProductionPlan{Id = Guid.NewGuid(), PlanningPeriod = "2014", ProductId = products[3].Id, PlannedAmount = 3000}
-            };
-
-            context.ProductionPlans.AddRange(plans);
             
             context.SaveChanges();
         }

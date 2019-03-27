@@ -17,5 +17,10 @@ namespace ProductionRequirements.Models
         public virtual UnitOfMeasurement UoM { get; set; }
 
         public virtual ICollection<ProductToComponentRelation> ProductToComponentRelations { get; set; }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

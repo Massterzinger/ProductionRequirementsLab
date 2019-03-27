@@ -14,7 +14,7 @@
         }
 
         public ProductionModel()
-            : base("name=ProductionModel")
+            : base("name=ProductionModelEgor")
         {
         }
 
@@ -33,7 +33,6 @@
         public virtual DbSet<UnitOfMeasurement> UnitsOfMeasurement { get; set; }
         public virtual DbSet<ProductComponent> ProductComponents { get; set; }
         public virtual DbSet<Product> Products { get; set; }
-        public virtual DbSet<ProductionPlan> ProductionPlans { get; set; }
         public virtual DbSet<ProductToComponentRelation> ProductToComponentRelations { get; set; }
     }
 }

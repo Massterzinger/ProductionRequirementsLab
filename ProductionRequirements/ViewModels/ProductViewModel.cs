@@ -2,13 +2,10 @@
 
 namespace ProductionRequirements.ViewModels
 {
-    public class YearProductsPlanViewModel
+    public class ProductViewModel
     {
-        [DisplayName("Найменування продукту")]
+        [DisplayName("Найменування виробу")]
         public string ProductName { get; set; }
-
-        [DisplayName("Кількість")]
-        public double ProductAmount { get; set; }
 
         [DisplayName("Одиниця виміру")]
         public string UoM { get; set; }
